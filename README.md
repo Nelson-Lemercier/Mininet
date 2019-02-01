@@ -23,5 +23,12 @@ It seems mininet need a plugin for the POX controller. It is available here :
 https://github.com/noxrepo/pox
 ```
 
+Need to check if the tables are correct.
+
 ##Q3
+
+Topology and pingall test done.
+
 ##Q4
+
+Topology done, script saved

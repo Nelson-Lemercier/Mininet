@@ -15,7 +15,7 @@ from mininet.link import TCLink
 from mininet.util import dumpNodeConnections
 from mininet.log import setLogLevel
 
-class MyTopo( Topo ):
+class TopoQ1( Topo ):
     "Simple topology example."
 
     def __init__( self ):
@@ -37,7 +37,7 @@ class MyTopo( Topo ):
 
         # Options
 
-        linkopts = dict(bw=5) # bw is expressed as a number in Mbit / Add "--link=tc" option to enable it
+        linkopts = dict() # bw is expressed as a number in Mbit / Add "--link=tc" option to enable it
 
         # Add links
 
@@ -51,4 +51,4 @@ class MyTopo( Topo ):
         self.addLink( rightHostS3, rightSwitch, **linkopts )
 
 
-topos = { 'mytopo': ( lambda: MyTopo() ) }
+topos = { 'topoq1': ( lambda: TopoQ1() ) }
